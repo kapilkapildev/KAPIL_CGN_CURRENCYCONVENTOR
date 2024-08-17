@@ -1,0 +1,122 @@
+*{
+  -webkit-user-select: none; user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  background-color: #383838;
+}
+
+.display {
+  height: 15vh;
+  width: 100%;
+  text-align: right;
+  background: #111;
+}
+
+.display .amount {
+  font-size: 10vh;
+}
+
+.display .currency {
+  color: orange;
+  font-size: 5vh;
+  padding-right: 1em;
+}
+
+.sidebar {
+  height: 100%;
+  width: 12vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 13vw;
+}
+
+.sidebar .burger {
+  color: orange;
+  position: absolute;
+  top: 2.5vw;
+  right: 2.5vw;
+  font-size: 7vw;
+  text-decoration: none;
+}
+
+.sidebar .sidebarBackground {
+  display: block;
+  background-color: #202020;
+  text-align: center;
+  width: 90%;
+  padding:0.6vw;
+}
+
+.sidebar .currencyFlag {
+  font-size: 6vw;
+}
+
+.sidebar .selector {
+  text-align: center;
+  color: white;
+  background-color: #202020;
+  display: block;
+  font-size: 1.5em;
+  height: 3em;
+  width: 95%;
+  padding: 2.5%;
+  margin: 2.5%;
+  box-sizing: border-box;
+  border: 1px solid #181818;
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.sidebar hr {
+  color: #202020;
+}
+
+.sidebar .downArrow {
+  color: orange;
+  font-size: 6vw;
+}
+
+#expandedContents {
+  display: none;
+}
+
+#collapsedContents {
+  display: block;
+}
+
+.main {
+  margin-left: 12vw;
+  transition: margin-left 0.5s;
+  padding: 16px;
+  height: 100%;
+  position: relative;
+}
+
+.buttons {
+  height: 75vh;
+  width: 100%;
+}
+
+.buttons button {
+  font-size: 5vh;
+  height: 25%;
+  width: 33.33%;
+  color: white;
+  background-color: #111;
+  border-color: #383838;
+}

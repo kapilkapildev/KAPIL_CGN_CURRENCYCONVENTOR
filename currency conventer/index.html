@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>Currency Calculator</title>
+
+    <link rel="apple-touch-icon" sizes="128x128" href="images/icon128.png">
+    <link rel="icon" sizes="192x192" href="images/icon192.png">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar">
+        <a href="#" id="burger" class="burger">☰</a>
+        <div id="collapsedContents">
+            <div class="sidebarBackground">
+                <span id="homeCurrencyFlag" class="currencyFlag"></span>
+            </div>
+            <span class="downArrow">🠗</span>
+            <br>
+            <div class="sidebarBackground">
+                <span id="visitingCurrencyFlag" class="currencyFlag"></span>
+            </div>
+        </div>
+        <div id="expandedContents">
+            <div id="homeCurrencyDiv">
+                <label for="homeCurrency">Home Currency</label>
+                <select name="homeCurrency" id="homeCurrency" class="selector">
+
+                </select>
+            </div>
+            <br><hr><br>
+            <div id="visitingCurrencyDiv">
+                <label for="visitingCurrency">Visiting Currency</label>
+                <select name="visitingCurrency" id="visitingCurrency" class="selector">
+
+                </select>
+            </div>
+            <br><hr><br>
+            <div id="bankFeeDiv">
+                <label for="bankFee">Bank Fee</label>
+                <select name="bankFee" id="bankFee" class="selector">
+                    <option value="1.00">0%</option>
+                    <option value="1.02">2%</option>
+                    <option value="1.04">4%</option>
+                    <option value="1.06">6%</option>
+                </select>
+            </div>
+            <br><br>
+            <p id="lastUpdated"></p>
+        </div>
+
+
+    </div>
+
+    <div id="main" class="main">
+
+        <div id="display" class="display">
+            <span id="displayAmount" class="amount"></span>
+            <span id="displayCurrency" class="currency"></span>
+        </div>
+
+        <div id="buttons" class="buttons">
+            <button id="7Btn">7</button><button id="8Btn">8</button><button id="9Btn">9</button>
+            <button id="4Btn">4</button><button id="5Btn">5</button><button id="6Btn">6</button>
+            <button id="1Btn">1</button><button id="2Btn">2</button><button id="3Btn">3</button>
+            <button id="CBtn">C</button><button id="0Btn">0</button><button id="=Btn">=</button>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <script src="scripts/model.js"></script>
+        <script src="scripts/view.js"></script>
+        <script src="scripts/controller.js"></script>
+    </footer>
+</body>
+
+</html>
